@@ -23,7 +23,7 @@ parser.add_argument('--epochs', action='store', dest='epochs', default=3, type=i
 
 parser.add_argument('--category_names', action="store", dest="category_names", default='cat_to_name.json')
 parser.add_argument('--learning_rate', action='store', nargs='?', default=0.001, type=float, dest='learning_rate', help='(float) learning rate of the network')
-parser.add_argument('--gpu', action='store_true', default=False, dest='boolean_t', help='Set a switch to use GPU')
+parser.add_argument('--gpu', action='store_true', default=True, dest='boolean_t', help='Set a switch to use GPU')
 
 results = parser.parse_args()
 

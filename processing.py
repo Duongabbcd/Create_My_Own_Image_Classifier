@@ -51,7 +51,7 @@ def loading_data():
 # Freeze parameters so we don't backprop through them
 def build_model(no_output_categories):
     hidden_units = 10240
-    model = models.vgg16(pretrained=True)
+    model = models.resnet50(weights='ResNet50_Weights.DEFAULT')
     
     input_size = 25088
     output_size = 102
